@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trans Uno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" alt="Логотип Trans Uno" class="logo">
+        <nav class="nav" id="nav">
+            <a href="#">Головна</a>
+            <a href="#">Послуги</a>
+            <a href="#">Контакти</a>
+            <a href="#">Про нас</a>
+            <a href="#" class="order-btn">Замовити</a>
+        </nav>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="abouts">
+            <img src="img/maps.jpg" height="250px" width="400px" alt="Фото компанії">
+            <div class="about-text">
+                <h2>Про нас</h2>
+                <p>Trans Uno — це компанія, що надає транспортні послуги найвищої якості. Ми прагнемо забезпечити нашим клієнтам надійність, комфорт та професійний підхід.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="transport">
+        <h2>Транспорт</h2>
+        <div class="transport-gallery">
+            <img src="img/car.jpg" alt="Мікроавтобус 1">
+            <img src="img/van2.jpg" alt="Мікроавтобус 2">
+            <img src="img/van3.jpg" alt="Мікроавтобус 3">
+        </div>
+        <p class="section-text">Ми використовуємо сучасні транспортні засоби, які проходять регулярне обслуговування та оснащені всім необхідним для комфортного перевезення пасажирів і вантажів.</p>
+    </section>
+
+    <section id="countries">
+        <h2>Країни перевезення</h2>
+        <div class="country-flags">
+            <img src="img/ukraine.png" alt="Україна" title="Україна">
+            <img src="img/poland.png" alt="Польща" title="Польща">
+            <img src="img/germany.png" alt="Німеччина" title="Німеччина">
+            <img src="img/spanish.png" alt="Іспанія" title="Іспанія">
+        </div>
+        <p class="section-text">Trans Uno здійснює перевезення між Україною, Польщею, Німеччиною та Іспанією.</p>
+    </section>
+
+    <section id="services">
+        <h2>Наші послуги</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="img/logo.png" alt="Перевезення з тваринами">
+                <h3>ПЕРЕВЕЗЕННЯ З ТВАРИНАМИ</h3>
+                <p>Ваші домашні улюбленці можуть подорожувати з вами</p>
+            </div>
+            <div class="service-card">
+                <img src="img/logo.png" alt="Відправка посилок">
+                <h3>ВІДПРАВКА ПОСИЛОК</h3>
+                <p>Відправляйте швидко та безпечно</p>
+            </div>
+            <div class="service-card">
+                <img src="img/logo.png" alt="Оформлення документів">
+                <h3>ОФОРМЛЕННЯ ДОКУМЕНТІВ</h3>
+                <p>Різного виду страхування та допомога з відкриттям візи</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="detailed-services">
+        <h2>Детальніші послуги</h2>
+        <ul class="detailed-list">
+            <li>Перевезення особистих речей</li>
+            <li>Допомога при переїзді</li>
+            <li>Кур'єрська доставка в межах ЄС</li>
+            <li>Супровід літніх людей</li>
+            <li>Послуги перекладача в дорозі</li>
+            <li>Працевлаштування</li>
+        </ul>
+    </section>
+
+    <section id="reviews">
+        <h2>Відгуки людей</h2>
+        <div class="reviews-container">
+            <div class="review">
+                <p><strong>Ім’я Клієнта</strong></p>
+                <p>"Ваш відгук тут..."</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Trans Uno</h3>
+                <p>&copy; 2025 Trans Uno.</p>
+                <p>Всі права захищені.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Сервіси</h3>
+                <ul>
+                    <li><a href="#">Відстеження замовлення</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Страхування</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Корисна інформація</h3>
+                <ul>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                    <li><a href="#">Правила перевезень</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>Телефон: +380 93 880 12 24</p>
+                <p>Email: 064@ukr.net</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="contact-sc">
+        <a href="https://web.telegram.org/k/#@Elektwor"><img src="img/telegram.png" height="30px" width="30px" alt="Telegram"></a>
+        <a href="https://www.instagram.com/trans_uno_/"><img src="img/instagram.png" height="30px" width="30px" alt="Instagram"></a>
+        <a href="https://www.facebook.com/transunoua/"><img src="img/facebook.png" height="30px" width="30px" alt="Facebook"></a>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
